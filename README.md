@@ -2,7 +2,6 @@
 
 一個為 Threads 平台添加便捷功能按鈕的 Chrome 擴展，讓您更輕松地管理內容。
 
-![擴展截圖](https://raw.githubusercontent.com/your-username/threads-enhance-buttons/main/screenshot.png)
 
 ## 功能特點
 
