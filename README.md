@@ -1,101 +1,79 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Threads 增強按鈕</title>
-  <style>
-    body {
-      width: 250px;
-      font-family: Arial, sans-serif;
-      padding: 15px;
-      color: #262626;
-    }
-    h2 {
-      color: #0095f6;
-      font-size: 16px;
-      margin-top: 0;
-      text-align: center;
-    }
-    p {
-      font-size: 14px;
-      line-height: 1.4;
-    }
-    .status {
-      background-color: #e8f5fe;
-      border-radius: 8px;
-      padding: 10px;
-      margin: 15px 0;
-      text-align: center;
-      font-weight: bold;
-      color: #0095f6;
-    }
-    .button {
-      background-color: #0095f6;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 8px 12px;
-      font-size: 14px;
-      cursor: pointer;
-      width: 100%;
-      margin-top: 10px;
-      transition: background-color 0.2s;
-    }
-    .button:hover {
-      background-color: #1877f2;
-    }
-    .footer {
-      margin-top: 15px;
-      font-size: 12px;
-      color: #8e8e8e;
-      text-align: center;
-    }
-    .feature {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-    .feature-icon {
-      width: 20px;
-      height: 20px;
-      margin-right: 10px;
-      background-color: #0095f6;
-      border-radius: 50%;
-      color: white;
-      text-align: center;
-      line-height: 20px;
-      flex-shrink: 0;
-    }
-    .feature-text {
-      font-size: 13px;
-    }
-  </style>
-</head>
-<body>
-  <h2>Threads 增強按鈕</h2>
-  
-  <p>此擴展為Threads貼文添加了便捷的功能按鈕，幫助您更輕松地管理內容。</p>
-  
-  <div class="status">
-    狀態：已啟用
-  </div>
-  
-  <div class="feature">
-    <div class="feature-icon">1</div>
-    <div class="feature-text">在Threads貼文右上角直接添加"不感興趣"按鈕</div>
-  </div>
-  
-  <div class="feature">
-    <div class="feature-icon">2</div>
-    <div class="feature-text">在Threads貼文右上角直接添加"封鎖"按鈕</div>
-  </div>
-  
-  <button class="button" id="refresh-btn">刷新頁面</button>
-  
-  <div class="footer">
-    版本 1.0
-  </div>
-  
-  <script src="popup.js"></script>
-</body>
-</html>
+# Threads 增强按钮
+
+一个为 Threads 平台添加便捷功能按钮的 Chrome 扩展，让您更轻松地管理内容。
+
+![扩展截图](https://raw.githubusercontent.com/your-username/threads-enhance-buttons/main/screenshot.png)
+
+## 功能特点
+
+- **"不感兴趣"按钮**: 在每个 Threads 贴文右上角直接添加"不感兴趣"按钮，一键过滤不想看到的内容
+- **"封锁"按钮**: 在每个 Threads 贴文右上角直接添加"封锁"按钮，快速屏蔽不需要的账号
+- **操作反馈**: 操作成功后有视觉反馈和平滑动画效果
+- **响应式设计**: 自适应移动设备的界面布局
+
+## 安装指南
+
+### 从 Chrome 网上应用店安装（推荐）
+
+1. 访问 [Chrome 网上应用店 - Threads 增强按钮](https://chrome.google.com/webstore/detail/your-extension-id)
+2. 点击"添加至 Chrome"按钮
+3. 在弹出的确认对话框中点击"添加扩展程序"
+
+### 手动安装（开发版）
+
+1. 下载此仓库到本地（点击页面顶部的绿色"Code"按钮，然后选择"Download ZIP"）
+2. 解压下载的 ZIP 文件到任意文件夹
+3. 打开 Chrome 浏览器，在地址栏输入 `chrome://extensions/`
+4. 在右上角开启"开发者模式"
+5. 点击"加载已解压的扩展程序"按钮
+6. 选择您刚才解压的文件夹
+7. 扩展程序将被添加到您的浏览器中
+
+## 使用方法
+
+1. 安装扩展后，访问 [Threads 网站](https://www.threads.net)
+2. 浏览您的信息流，您会看到每个贴文右上角新增了两个按钮
+3. 点击"不感兴趣"按钮可快速标记不想看到的内容
+4. 点击"封锁"按钮可快速屏蔽发布该贴文的用户
+5. 操作成功后，贴文会平滑消失，并显示操作成功提示
+
+如果您需要重新加载页面使扩展生效，可以：
+- 点击浏览器工具栏中的扩展图标
+- 在弹出的窗口中点击"刷新页面"按钮
+
+## 常见问题
+
+**Q: 为什么安装后看不到按钮？**  
+A: 请确保您已经刷新了 Threads 页面。如果仍然看不到，可以尝试点击扩展图标并使用"刷新页面"按钮。
+
+**Q: 扩展在手机上可以使用吗？**  
+A: 此扩展设计时考虑了响应式布局，但需要在支持 Chrome 扩展的桌面浏览器中使用。移动设备上的浏览器通常不支持扩展。
+
+**Q: 扩展会收集我的数据吗？**  
+A: 不会。此扩展完全在本地运行，不会收集或传输任何用户数据。
+
+## 隐私政策
+
+此扩展不收集、存储或传输任何用户数据。所有操作均在本地浏览器环境中执行。
+
+## 开源许可
+
+此项目基于 [MIT 许可证](LICENSE) 开源。
+
+## 贡献指南
+
+欢迎提交 Issues 或 Pull Requests 来帮助改进此扩展！
+
+1. Fork 此仓库
+2. 创建您的特性分支 (`git checkout -b feature/amazing-feature`)
+3. 提交您的更改 (`git commit -m 'Add some amazing feature'`)
+4. 推送到分支 (`git push origin feature/amazing-feature`)
+5. 打开一个 Pull Request
+
+## 更新日志
+
+**版本 1.0**
+- 初始发布
+- 添加"不感兴趣"和"封锁"按钮功能
+- 实现操作反馈和动画效果
+- 添加响应式设计适配移动设备
