@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- 渐变背景 -->
+  <defs>
+    <linearGradient id="threads-gradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#000000" />
+      <stop offset="50%" style="stop-color:#262626" />
+      <stop offset="100%" style="stop-color:#1D1D1D" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 圆形背景 -->
+  <circle cx="24" cy="24" r="22" fill="url(#threads-gradient)" />
+  
+  <!-- Threads图标样式元素 -->
+  <path d="M24,12 C18,12 13,16 13,24 C13,30 16,36 24,36 C30,36 35,32 35,24" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" />
+  <circle cx="30" cy="20" r="2" fill="white" />
+  
+  <!-- 两个按钮图标 -->
+  <g fill="white">
+    <!-- 不感兴趣按钮图标 -->
+    <rect x="10" y="14" width="14" height="5" rx="2.5" fill="white" fill-opacity="0.9" />
+    <circle cx="13" cy="16.5" r="1" fill="#000000" />
+    <path d="M17,16.8 C16,16.8 15,17.5 14.5,17 C14.8,16 15.5,15.2 17,15.2 C18.5,15.2 19.2,16 19.5,17 C19,17.5 18,16.8 17,16.8z" fill="#000000" />
+    <line x1="12" y1="15" x2="21" y2="18" stroke="#000000" stroke-width="0.8" />
+    
+    <!-- 封锁按钮图标 -->
+    <rect x="10" y="29" width="14" height="5" rx="2.5" fill="white" fill-opacity="0.9" />
+    <circle cx="17" cy="31.5" r="2" fill="none" stroke="#000000" stroke-width="0.8" />
+    <line x1="14.5" y1="29" x2="19.5" y2="34" stroke="#000000" stroke-width="0.8" />
+  </g>
+  
+  <!-- 右侧指示箭头 -->
+  <path d="M28,24 L32,24 L30,22 M32,24 L30,26" stroke="white" stroke-width="1.5" fill="none" />
+</svg>

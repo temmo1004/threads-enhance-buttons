@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Threads 增強按鈕",
+  "version": "1.0",
+  "description": "在Threads貼文右側添加不感興趣和封鎖按鈕",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["*://*.instagram.com/*", "*://*.threads.net/*"],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "Threads 增強按鈕",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*", "*://*.threads.net/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
